@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/alona/static/css/main.855c234a.chunk.css",
+    "main.js": "/alona/static/js/main.205db607.chunk.js",
+    "main.js.map": "/alona/static/js/main.205db607.chunk.js.map",
+    "runtime-main.js": "/alona/static/js/runtime-main.b9bf5a10.js",
+    "runtime-main.js.map": "/alona/static/js/runtime-main.b9bf5a10.js.map",
+    "static/js/2.14f1fd96.chunk.js": "/alona/static/js/2.14f1fd96.chunk.js",
+    "static/js/2.14f1fd96.chunk.js.map": "/alona/static/js/2.14f1fd96.chunk.js.map",
+    "index.html": "/alona/index.html",
+    "static/css/main.855c234a.chunk.css.map": "/alona/static/css/main.855c234a.chunk.css.map",
+    "static/js/2.14f1fd96.chunk.js.LICENSE.txt": "/alona/static/js/2.14f1fd96.chunk.js.LICENSE.txt",
+    "static/media/Cat-Mobile.4e168613.png": "/alona/static/media/Cat-Mobile.4e168613.png",
+    "static/media/Cat-hero.2dc3d74b.svg": "/alona/static/media/Cat-hero.2dc3d74b.svg",
+    "static/media/Cat-shoe.d8e92eb8.svg": "/alona/static/media/Cat-shoe.d8e92eb8.svg",
+    "static/media/Conffetti.f3f923b8.svg": "/alona/static/media/Conffetti.f3f923b8.svg",
+    "static/media/close.8a4e3455.svg": "/alona/static/media/close.8a4e3455.svg",
+    "static/media/instagram.7d8d2fd6.svg": "/alona/static/media/instagram.7d8d2fd6.svg",
+    "static/media/linkedin.006e424c.svg": "/alona/static/media/linkedin.006e424c.svg",
+    "static/media/mail.5fe69262.svg": "/alona/static/media/mail.5fe69262.svg",
+    "static/media/small_confetti1.1d54a9e0.svg": "/alona/static/media/small_confetti1.1d54a9e0.svg",
+    "static/media/small_confetti2.0d93caa0.svg": "/alona/static/media/small_confetti2.0d93caa0.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b9bf5a10.js",
+    "static/js/2.14f1fd96.chunk.js",
+    "static/css/main.855c234a.chunk.css",
+    "static/js/main.205db607.chunk.js"
+  ]
+}
