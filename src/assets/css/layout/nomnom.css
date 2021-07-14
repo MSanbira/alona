@@ -106,19 +106,6 @@
   font-size: 16px;
 }
 
-.color-palette .colors div:nth-child(1)::before {
-  background: #0000ef;
-}
-.color-palette .colors div:nth-child(2)::before {
-  background: #ffc7c7;
-}
-.color-palette .colors div:nth-child(3)::before {
-  background: #f3e8e8;
-}
-.color-palette .colors div:nth-child(4)::before {
-  background: #fbf8f8;
-}
-
 .illustrations-section {
   display: flex;
   flex-wrap: wrap;

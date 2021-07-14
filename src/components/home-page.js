@@ -1,5 +1,4 @@
 import React from "react";
-import "../assets/css/layout/home.css";
 import { Paths } from '../constants';
 import catHeroSrc from '../assets/images/Cat-hero.svg';
 import catShoeSrc from '../assets/images/Cat-shoe.svg';

@@ -1,6 +1,5 @@
 import React from "react";
 import Parallax from "react-rellax";
-import "../assets/css/layout/about.css";
 import imageAboutSrc from "../assets/images/image_about.png";
 import mailSrc from "../assets/images/mail.svg";
 

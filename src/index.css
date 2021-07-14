@@ -5,3 +5,8 @@
 @import '/src/assets/css/main.css';
 
 @import '/src/assets/css/layout/general.css';
+@import '/src/assets/css/layout/home.css';
+@import '/src/assets/css/layout/about.css';
+@import '/src/assets/css/layout/nomnom.css';
+@import '/src/assets/css/layout/hatch-baby.css';
+@import '/src/assets/css/layout/responsive.css';

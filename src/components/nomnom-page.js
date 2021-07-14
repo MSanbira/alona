@@ -1,5 +1,4 @@
 import React from "react";
-import "../assets/css/layout/nomnom.css";
 import headerSrc from "../assets/images/nomnom/header.png";
 import multiFilteringSrc from "../assets/images/nomnom/Photo-multi-screen-filtering.png";
 import deviceMock1Src from "../assets/images/nomnom/Device-Mock-1.png";
@@ -26,6 +25,7 @@ import illustration8Src from "../assets/images/nomnom/bbq-img.png";
 import arrowSrc from "../assets/images/Vector.svg";
 import { getSubPath } from "../utils";
 import { Paths } from "../constants";
+import ColorPalette from "./small-components/color-palette";
 
 export default function NomnomPage(props) {
   return (
@@ -243,19 +243,18 @@ export default function NomnomPage(props) {
         </div>
       </div>
 
-      <div className="content-divider"></div>
+      <div className="content-divider" />
 
-      <div className="color-palette">
-        <h3 className="centered-text">COLOR PALETTE</h3>
-        <div className="colors">
-          <div data-color-name="Takeaway Cobalt"></div>
-          <div data-color-name="Tom Yum Pink"></div>
-          <div data-color-name="Waterlilly Nude"></div>
-          <div data-color-name="Zen White"></div>
-        </div>
-      </div>
+      <ColorPalette
+        colors={[
+          { name: "Takeaway Cobalt", color: "#0000ef" },
+          { name: "Tom Yum Pink", color: "#ffc7c7" },
+          { name: "Waterlilly Nude", color: "#f3e8e8" },
+          { name: "Zen White", color: "#fbf8f8" },
+        ]}
+      />
 
-      <div className="content-divider"></div>
+      <div className="content-divider" />
 
       <div className="container">
         <div className="centered-title-and-p">
@@ -287,11 +286,7 @@ export default function NomnomPage(props) {
             <br />
             stick around and look at some other stuff I created.
           </p>
-          <img
-            className="arrow-img"
-            src={arrowSrc}
-            alt="here"
-          />
+          <img className="arrow-img" src={arrowSrc} alt="here" />
           <div className="btn-container">
             <a
               href={getSubPath(Paths.HATCH)}

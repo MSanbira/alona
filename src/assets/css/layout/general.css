@@ -224,6 +224,7 @@ footer .socials {
   border-radius: 50%;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   margin-bottom: 24px;
+  background-color: var(--color-palette, black);
 }
 .color-palette .colors div::after {
   content: attr(data-color-name);
