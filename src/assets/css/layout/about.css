@@ -1,0 +1,36 @@
+#aboutPage {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.about-img {
+  position: relative;
+  display: block;
+  width: calc(min(100%, 1126px));
+  max-height: 676px;
+  margin: 0 auto;
+}
+
+.about-text-and-btns {
+  padding: 56px 88px;
+  position: relative;
+  top: -70px;
+  background: white;
+  width: 914px;
+  margin: 0 auto;
+}
+.about-text-and-btns p {
+  margin-bottom: 24px;
+  line-height: 28px;
+}
+.about-text-and-btns p:last-of-type {
+  margin-bottom: 72px;
+}
+
+.about-text-and-btns .btn-container {
+  display: flex;
+  justify-content: center;
+}
+.about-text-and-btns .btn-container .btn:first-child {
+  margin-right: 32px;
+}

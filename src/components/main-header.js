@@ -2,6 +2,7 @@ import React from "react";
 import { Paths } from "../constants";
 import closeSrc from '../assets/images/close.svg';
 import mailSrc from '../assets/images/mail.svg';
+import mobileMenuSrc from '../assets/images/mobile-menu-icon.svg';
 import { getRootPath, getSubPath } from "../utils";
 
 export default function MainHeader(props) {
@@ -10,7 +11,7 @@ export default function MainHeader(props) {
       <div className="logo-nav-section">
         <img
           className="mobile-menu-icon"
-          src="/assets/images/mobile menu icon.svg"
+          src={mobileMenuSrc}
           alt="menu"
           data-open-menu="nav"
         />

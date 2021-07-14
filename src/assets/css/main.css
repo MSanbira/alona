@@ -23,7 +23,7 @@ body {
   box-sizing: unset;
   width: 1278px;
   margin: 0 auto;
-  padding: 0 calc(max(24px, calc(50vw - 639px)));
+  padding: 0 calc(max(24px, calc(50vw - 660px)));
   overflow-x: hidden;
   max-width: calc(100% - 48px);
 }

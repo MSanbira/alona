@@ -5,6 +5,7 @@ import { Paths } from "../constants";
 import AboutPage from "./about-page";
 import HomePage from "./home-page";
 import { getSubPath, getRootPath } from "../utils";
+import NomnomPage from "./nomnom-page";
 
 export default function PageContent(props) {
   return (
@@ -12,6 +13,7 @@ export default function PageContent(props) {
       <Switch>
         <Route path={getRootPath()} component={HomePage} exact/>
         <Route path={getSubPath(Paths.ABOUT)} component={AboutPage} exact/>
+        <Route path={getSubPath(Paths.NOMNOM)} component={NomnomPage} exact/>
         <Redirect from='*' to={getRootPath()} />
       </Switch>
     </Router>
