@@ -2,6 +2,7 @@ import React from "react";
 import { Paths } from "../constants";
 import closeSrc from '../assets/images/close.svg';
 import mailSrc from '../assets/images/mail.svg';
+import { getRootPath, getSubPath } from "../utils";
 
 export default function MainHeader(props) {
   return (
@@ -13,7 +14,7 @@ export default function MainHeader(props) {
           alt="menu"
           data-open-menu="nav"
         />
-        <a href="/" className="text-btn title">
+        <a href={getRootPath()} className="text-btn title">
           ALONA SANBIRA
         </a>
         <div className="divider hide-on-mobile">{'//'}</div>
@@ -23,7 +24,7 @@ export default function MainHeader(props) {
             src={closeSrc}
             alt="close"
           />
-          <a href={Paths.ABOUT} className="text-btn nav-btn">
+          <a href={getSubPath(Paths.ABOUT)} className="text-btn nav-btn">
             about
           </a>
           <div className="text-btn with-img hide-on-mobile nav-btn work-btn">
@@ -44,10 +45,10 @@ export default function MainHeader(props) {
           </div>
           <div className="work-divider color-primary">select work</div>
           <div className="work-nav-links" data-menu-to-open="work">
-            <a href={Paths.NOMNOM} className="text-btn nav-btn">
+            <a href={getSubPath(Paths.NOMNOM)} className="text-btn nav-btn">
               nomnom
             </a>
-            <a href={Paths.HATCH} className="text-btn nav-btn">
+            <a href={getSubPath(Paths.HATCH)} className="text-btn nav-btn">
               hatch baby
             </a>
           </div>

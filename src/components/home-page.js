@@ -7,6 +7,7 @@ import catMobileSrc from '../assets/images/Cat-Mobile.png';
 import conffetiSrc from '../assets/images/Conffetti.svg';
 import smallConfetti1Src from '../assets/images/small_confetti1.svg';
 import smallConfetti2Src from '../assets/images/small_confetti2.svg';
+import { getSubPath } from "../utils";
 
 export default function HomePage(props) {
   return (
@@ -41,7 +42,7 @@ export default function HomePage(props) {
           <br />
           I’m also a huge cat lady.
           <br />
-          <a href={Paths.ABOUT} className="color-primary">
+          <a href={getSubPath(Paths.ABOUT)} className="color-primary">
             Read more about me.
           </a>
           <img
@@ -65,14 +66,14 @@ export default function HomePage(props) {
           <h2 className="color-primary">select work</h2>
           <div className="btn-container">
             <a
-              href={Paths.NOMNOM}
+              href={getSubPath(Paths.NOMNOM)}
               className="btn btn-big"
               data-sub-text="a place for foodies"
             >
               nomnom
             </a>
             <a
-              href={Paths.HATCH}
+              href={getSubPath(Paths.HATCH)}
               className="btn btn-big"
               data-sub-text="ecommerce ui"
             >
