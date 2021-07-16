@@ -22,10 +22,11 @@ import illustration5Src from "../assets/images/nomnom/dimsum-img.png";
 import illustration6Src from "../assets/images/nomnom/sate-img.png";
 import illustration7Src from "../assets/images/nomnom/fried-img.png";
 import illustration8Src from "../assets/images/nomnom/bbq-img.png";
-import arrowSrc from "../assets/images/Vector.svg";
-import { getSubPath } from "../utils";
+
 import { Paths } from "../constants";
 import ColorPalette from "./small-components/color-palette";
+import MobileCarousel from "./small-components/mobile-carousel";
+import AnotherApps from "./small-components/another-apps";
 
 export default function NomnomPage(props) {
   return (
@@ -104,37 +105,14 @@ export default function NomnomPage(props) {
         src={multiFilteringSrc}
         alt="nomnom mockup"
       />
-      <div className="img-carousel">
-        <div className="dots-cover">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div className="item">
-          <img src={deviceMock1Src} alt="nomnom mockup" />
-          <div className="dots">
-            <div className="selected"></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-        <div className="item">
-          <img src={deviceMock2Src} alt="nomnom mockup" />
-          <div className="dots">
-            <div></div>
-            <div className="selected"></div>
-            <div></div>
-          </div>
-        </div>
-        <div className="item">
-          <img src={deviceMock3Src} alt="nomnom mockup" />
-          <div className="dots">
-            <div></div>
-            <div></div>
-            <div className="selected"></div>
-          </div>
-        </div>
-      </div>
+
+      <MobileCarousel
+        items={[
+          <img src={deviceMock1Src} alt="nomnom mockup" />,
+          <img src={deviceMock2Src} alt="nomnom mockup" />,
+          <img src={deviceMock3Src} alt="nomnom mockup" />,
+        ]}
+      />
 
       <div className="content-divider"></div>
 
@@ -279,25 +257,7 @@ export default function NomnomPage(props) {
 
       <div className="content-divider"></div>
 
-      <div className="container">
-        <div className="another-app-btn-section">
-          <p className="centered-text">
-            Like what you see?
-            <br />
-            stick around and look at some other stuff I created.
-          </p>
-          <img className="arrow-img" src={arrowSrc} alt="here" />
-          <div className="btn-container">
-            <a
-              href={getSubPath(Paths.HATCH)}
-              className="btn"
-              data-sub-text="ecommerce ui"
-            >
-              hatch baby
-            </a>
-          </div>
-        </div>
-      </div>
+      <AnotherApps exclude={Paths.NOMNOM}/>
     </section>
   );
 }

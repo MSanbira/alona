@@ -1,4 +1,3 @@
-
 header {
   background: white;
   border-bottom: 1px solid var(--primary-color-fade);
@@ -52,10 +51,10 @@ nav .work-nav-links .text-btn {
 nav .work-nav-links .text-btn:not(:last-child) {
   margin-bottom: 24px;
 }
-header .contact-and-cv,
-header .mobile-menu-icon,
-header .mobile-menu-exit,
-header .work-divider {
+.contact-and-cv,
+.mobile-menu-icon,
+.mobile-menu-exit,
+.work-divider {
   display: none;
 }
 
@@ -129,7 +128,7 @@ footer .socials {
   margin-bottom: 24px;
 }
 
-.img-carousel {
+.mobile-carousel {
   display: none;
   grid-auto-columns: 100vw;
   justify-items: center;
@@ -137,52 +136,36 @@ footer .socials {
   scroll-snap-type: x mandatory;
   position: relative;
 }
-.img-carousel::-webkit-scrollbar {
+.mobile-carousel::-webkit-scrollbar {
   display: none;
 }
-.img-carousel .dots-cover {
+
+.mobile-carousel .item {
+  grid-row: 1 / 2;
+  scroll-snap-align: center;
+  width: 100%;
+}
+.mobile-carousel .item img {
+  display: block;
+  margin: 0 auto;
+}
+.mobile-carousel .dots {
   position: sticky;
-  bottom: 14px;
+  bottom: 0;
   left: 0;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 14px;
-  z-index: 10;
-  background: white;
-  mix-blend-mode: screen;
-  box-shadow: 0 0 0 1px white;
 }
-.img-carousel .dots-cover div {
-  height: 14px;
-  width: 14px;
-  border-radius: 50%;
-  background: black;
-}
-.img-carousel .item {
-  grid-row: 1 / 2;
-  scroll-snap-align: center;
-  width: 100%;
-}
-.img-carousel .item img {
-  display: block;
-  margin: 0 auto;
-}
-.img-carousel .item .dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 14px;
-  background: var(--secondary-color-fade);
-}
-.img-carousel .item .dots div {
+.mobile-carousel .dots div {
   height: 14px;
   width: 14px;
   border-radius: 50%;
   background: var(--secondary-color-fade);
 }
-.img-carousel .item .dots div.selected {
+.mobile-carousel .dots div.selected {
   background: var(--secondary-color);
 }
 

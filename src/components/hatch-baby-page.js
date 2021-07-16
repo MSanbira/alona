@@ -20,11 +20,11 @@ import daynoSrc from "../assets/images/hatch_baby/dayno.png";
 import birds3Src from "../assets/images/hatch_baby/birds3.png";
 import birds2Src from "../assets/images/hatch_baby/birds2.png";
 import birds1Src from "../assets/images/hatch_baby/birds1.png";
-import arrowSrc from "../assets/images/Vector.svg";
 
-import { getSubPath } from "../utils";
 import { Paths } from "../constants";
 import ColorPalette from "./small-components/color-palette";
+import MobileCarousel from "./small-components/mobile-carousel";
+import AnotherApps from "./small-components/another-apps";
 
 export default function HatchBabyPage(props) {
   return (
@@ -167,26 +167,12 @@ export default function HatchBabyPage(props) {
         </div>
       </div>
 
-      <div className="img-carousel">
-        <div className="dots-cover">
-          <div></div>
-          <div></div>
-        </div>
-        <div className="item">
-          <img src={DMLeftMSrc} alt="nomnom mockup" />
-          <div className="dots">
-            <div className="selected"></div>
-            <div></div>
-          </div>
-        </div>
-        <div className="item">
-          <img src={DMRightMSrc} alt="nomnom mockup" />
-          <div className="dots">
-            <div></div>
-            <div className="selected"></div>
-          </div>
-        </div>
-      </div>
+      <MobileCarousel
+        items={[
+          <img src={DMLeftMSrc} alt="hatch baby mockup" />,
+          <img src={DMRightMSrc} alt="hatch baby mockup" />,
+        ]}
+      />
 
       <div className="content-divider"></div>
 
@@ -331,59 +317,18 @@ export default function HatchBabyPage(props) {
         </div>
       </div>
 
-      <div className="img-carousel">
-        <div className="dots-cover">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div className="item">
-          <img src={birds3Src} alt="bird illustration" />
-          <div className="dots">
-            <div className="selected"></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-        <div className="item">
-          <img src={birds2Src} alt="bird illustration" />
-          <div className="dots">
-            <div></div>
-            <div className="selected"></div>
-            <div></div>
-          </div>
-        </div>
-        <div className="item">
-          <img src={birds1Src} alt="bird illustration" />
-          <div className="dots">
-            <div></div>
-            <div></div>
-            <div className="selected"></div>
-          </div>
-        </div>
-      </div>
+      <MobileCarousel
+        items={[
+          <img src={birds3Src} alt="bird illustration" />,
+          <img src={birds2Src} alt="bird illustration" />,
+          <img src={birds1Src} alt="bird illustration" />,
+        ]}
+      />
 
       <div className="content-divider"></div>
 
-      <div className="container">
-        <div className="another-app-btn-section">
-          <p className="centered-text">
-            Like what you see?
-            <br />
-            stick around and look at some other stuff I created.
-          </p>
-          <img className="arrow-img" src={arrowSrc} alt="here" />
-          <div className="btn-container">
-            <a
-              href={getSubPath(Paths.NOMNOM)}
-              className="btn"
-              data-sub-text="a place for foodies"
-            >
-              nomnom
-            </a>
-          </div>
-        </div>
-      </div>
+      <AnotherApps exclude={Paths.HATCH}/>
+
     </section>
   );
 }

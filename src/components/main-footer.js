@@ -5,7 +5,7 @@ import instagramSrc from '../assets/images/instagram.svg';
 
 export default function MainFooter(props) {
   return (
-    <footer>
+    <footer onClick={() => props.setIsMenuOpen(false)}>
       <div className="contacts">
         <a href="mailto:alona.cr@gmail.com" className="text-btn contact-btn">
           CONTACT ME

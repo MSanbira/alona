@@ -1,11 +1,13 @@
 import React from "react";
 import { Paths } from "../constants";
-import closeSrc from '../assets/images/close.svg';
-import mailSrc from '../assets/images/mail.svg';
-import mobileMenuSrc from '../assets/images/mobile-menu-icon.svg';
+import closeSrc from "../assets/images/close.svg";
+import mailSrc from "../assets/images/mail.svg";
+import mobileMenuSrc from "../assets/images/mobile-menu-icon.svg";
 import { getRootPath, getSubPath } from "../utils";
 
 export default function MainHeader(props) {
+  const { setIsMenuOpen, isMenuOpen } = props;
+
   return (
     <header>
       <div className="logo-nav-section">
@@ -13,17 +15,18 @@ export default function MainHeader(props) {
           className="mobile-menu-icon"
           src={mobileMenuSrc}
           alt="menu"
-          data-open-menu="nav"
+          onClick={() => setIsMenuOpen(true)}
         />
         <a href={getRootPath()} className="text-btn title">
           ALONA SANBIRA
         </a>
-        <div className="divider hide-on-mobile">{'//'}</div>
-        <nav data-menu-to-open="nav">
+        <div className="divider hide-on-mobile">{"//"}</div>
+        <nav className={isMenuOpen ? "show" : ""}>
           <img
             className="mobile-menu-exit"
             src={closeSrc}
             alt="close"
+            onClick={() => setIsMenuOpen(false)}
           />
           <a href={getSubPath(Paths.ABOUT)} className="text-btn nav-btn">
             about
@@ -54,11 +57,11 @@ export default function MainHeader(props) {
             </a>
           </div>
           <div className="contact-and-cv">
-            <div className="btn btn-small">
+            <a className="btn btn-small" href="mailto:alona.cr@gmail.com">
               <img src={mailSrc} alt="contact me" />
-            </div>
+            </a>
             <a
-              href='/alona-sanbira-cv.pdf'
+              href="/alona-sanbira-cv.pdf"
               target="_blank"
               rel="noreferrer"
               className="btn btn-small"
@@ -72,6 +75,7 @@ export default function MainHeader(props) {
         href="/alona-sanbira-cv.pdf"
         target="_blank"
         className="btn btn-small"
+        rel="noreferrer"
       >
         resume
       </a>
