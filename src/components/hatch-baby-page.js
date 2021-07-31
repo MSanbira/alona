@@ -1,5 +1,5 @@
 import React from "react";
-import lampHeaderSrc from "../assets/images/hatch_baby/lamp-header.png";
+import lampHeaderSrc from "../assets/images/hatch_baby/Hbaby-exp-header.png";
 import homepageSrc from "../assets/images/hatch_baby/homepage.png";
 import musicalNotesSrc from "../assets/images/hatch_baby/MusicalNotes.png";
 import productPageSrc from "../assets/images/hatch_baby/product-page.png";
@@ -27,10 +27,12 @@ import MobileCarousel from "./small-components/mobile-carousel";
 import AnotherApps from "./small-components/another-apps";
 
 export default function HatchBabyPage(props) {
+  const mainImgStyle = {'--main-img-color': '#004f79'}
+
   return (
     <section id="hatchBabyPage">
-      <div className="main-img">
-        <img src={lampHeaderSrc} alt="hatch baby app" />
+      <div className="main-img" style={mainImgStyle}>
+        <img src={lampHeaderSrc} alt="hatch baby app" style={{padding: '16px 0 32px 0'}}/>
       </div>
       <div className="container">
         <div className="summery-text-container">

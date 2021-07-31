@@ -35,6 +35,7 @@ nav .work-nav-links {
   position: absolute;
   top: 40px;
   left: -16px;
+  min-width: 240px;
 }
 nav .work-nav-links::before {
   content: "";
@@ -90,7 +91,8 @@ footer .socials {
 .content-divider {
   height: 1px;
   background: #000;
-  margin: 56px 0;
+  margin: 72px auto;
+  width: 72px;
 }
 
 .main-img {
@@ -100,9 +102,10 @@ footer .socials {
   overflow: hidden;
   max-height: calc(min(70vh, 675px));
   border-bottom: solid 1px #000;
+  background: var(--main-img-color);
 }
 .main-img img {
-  width: 100vw;
+  width: auto;
   height: auto;
   display: block;
 }

@@ -7,6 +7,8 @@ import HomePage from "./home-page";
 import { getSubPath, getRootPath } from "../utils";
 import NomnomPage from "./nomnom-page";
 import HatchBabyPage from "./hatch-baby-page";
+import TransparencyPage from "./transparency-page";
+import DSPage from "./ds-page";
 
 export default function PageContent(props) {
   return (
@@ -15,6 +17,8 @@ export default function PageContent(props) {
         <Switch>
           <Route path={getRootPath()} component={HomePage} exact />
           <Route path={getSubPath(Paths.ABOUT)} component={AboutPage} exact />
+          <Route path={getSubPath(Paths.TRANSPARENCY)} component={TransparencyPage} exact />
+          <Route path={getSubPath(Paths.DS)} component={DSPage} exact />
           <Route path={getSubPath(Paths.NOMNOM)} component={NomnomPage} exact />
           <Route
             path={getSubPath(Paths.HATCH)}

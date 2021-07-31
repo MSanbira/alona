@@ -123,7 +123,7 @@
   .btn.btn-big {
     justify-content: center;
     border: solid 1px var(--primary-color);
-    font-size: 28px;
+    font-size: 20px;
     padding: 16px;
   }
 
@@ -218,6 +218,9 @@
   }
   .contact-and-cv .btn:first-child {
     margin-right: 24px;
+  }
+  .extracurricular-container {
+    grid-template-columns: 1fr;
   }
 
   .work-divider {

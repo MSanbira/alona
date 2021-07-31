@@ -54,10 +54,10 @@
   align-items: center;
 }
 
-.font-selection-container {
+/* .font-selection-container {
   margin-top: -24px;
   margin-bottom: -56px;
-}
+} */
 
 .font-selection-section {
   display: grid;
@@ -88,6 +88,7 @@
 }
 .mock-contnier img {
   display: block;
+  border-bottom: solid 1px #909090;
 }
 
 .text-box {

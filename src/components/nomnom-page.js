@@ -1,5 +1,5 @@
 import React from "react";
-import headerSrc from "../assets/images/nomnom/header.png";
+import headerSrc from "../assets/images/nomnom/nomnom-exp-header.png";
 import multiFilteringSrc from "../assets/images/nomnom/Photo-multi-screen-filtering.png";
 import deviceMock1Src from "../assets/images/nomnom/Device-Mock-1.png";
 import deviceMock2Src from "../assets/images/nomnom/Device-Mock-2.png";
@@ -29,10 +29,12 @@ import MobileCarousel from "./small-components/mobile-carousel";
 import AnotherApps from "./small-components/another-apps";
 
 export default function NomnomPage(props) {
+  const mainImgStyle = {'--main-img-color': '#FFE6E5'}
+
   return (
     <section id="nomnomPage">
-      <div className="main-img">
-        <img src={headerSrc} alt="nomnom app" />
+      <div className="main-img" style={mainImgStyle}>
+        <img src={headerSrc} alt="nomnom app"/>
       </div>
       <div className="container">
         <div className="summery-text-container">

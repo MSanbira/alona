@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import MainHeader from './components/main-header'
 import MainFooter from './components/main-footer'
 import PageContent from './components/page-content';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => document.querySelector('.app-loader').classList.add('hide'), []);
 
   return (
     <div className="App">

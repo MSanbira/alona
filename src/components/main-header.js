@@ -3,7 +3,7 @@ import { Paths } from "../constants";
 import closeSrc from "../assets/images/close.svg";
 import mailSrc from "../assets/images/mail.svg";
 import mobileMenuSrc from "../assets/images/mobile-menu-icon.svg";
-import { getRootPath, getSubPath } from "../utils";
+import { getRootPath, getSubPath, isCurrent } from "../utils";
 
 export default function MainHeader(props) {
   const { setIsMenuOpen, isMenuOpen } = props;
@@ -28,7 +28,11 @@ export default function MainHeader(props) {
             alt="close"
             onClick={() => setIsMenuOpen(false)}
           />
-          <a href={getSubPath(Paths.ABOUT)} className="text-btn nav-btn">
+          <a
+            href={getSubPath(Paths.ABOUT)}
+            className="text-btn nav-btn"
+            data-is-current={isCurrent(Paths.ABOUT)}
+          >
             about
           </a>
           <div className="text-btn with-img hide-on-mobile nav-btn work-btn">
@@ -49,10 +53,32 @@ export default function MainHeader(props) {
           </div>
           <div className="work-divider color-primary">select work</div>
           <div className="work-nav-links" data-menu-to-open="work">
-            <a href={getSubPath(Paths.NOMNOM)} className="text-btn nav-btn">
+            <a
+              href={getSubPath(Paths.TRANSPARENCY)}
+              className="text-btn nav-btn"
+              data-is-current={isCurrent(Paths.TRANSPARENCY)}
+            >
+              transparency by design
+            </a>
+            <a
+              href={getSubPath(Paths.DS)}
+              className="text-btn nav-btn"
+              data-is-current={isCurrent(Paths.DS)}
+            >
+              design system
+            </a>
+            <a
+              href={getSubPath(Paths.NOMNOM)}
+              className="text-btn nav-btn"
+              data-is-current={isCurrent(Paths.NOMNOM)}
+            >
               nomnom
             </a>
-            <a href={getSubPath(Paths.HATCH)} className="text-btn nav-btn">
+            <a
+              href={getSubPath(Paths.HATCH)}
+              className="text-btn nav-btn"
+              data-is-current={isCurrent(Paths.HATCH)}
+            >
               hatch baby
             </a>
           </div>

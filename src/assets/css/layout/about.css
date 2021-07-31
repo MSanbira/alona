@@ -23,9 +23,6 @@
   margin-bottom: 24px;
   line-height: 28px;
 }
-.about-text-and-btns p:last-of-type {
-  margin-bottom: 72px;
-}
 
 .about-text-and-btns .btn-container {
   display: flex;
@@ -34,3 +31,33 @@
 .about-text-and-btns .btn-container .btn:first-child {
   margin-right: 32px;
 }
+
+.extracurricular-container {
+  display: grid;
+  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 64px;
+  row-gap: 56px;
+  margin-bottom: 56px;
+  width: 100%;
+}
+.extracurricular-container > h3:first-child {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.extracurricular-section {
+  display: grid;
+  gap: 24px;
+}
+.extracurricular-section p {
+  margin-bottom: 0;
+}
+.extracurricular-section a {
+  color: var(--secondary-color);
+}
+.extracurricular-section img {
+  max-width: 400px;
+  width: 100%;
+}
+

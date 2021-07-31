@@ -15,6 +15,10 @@ body {
   font-weight: var(--weight-normal);
 }
 
+.hide {
+  display: none !important;
+}
+
 .contained-img {
   max-width: 100%;
 }
@@ -79,10 +83,6 @@ h3 {
   font-weight: var(--weight-bold);
 }
 
-.nav-btn.active {
-  color: var(--secondary-color);
-}
-
 .text-btn {
   text-decoration: none;
   font-size: 16px;
@@ -97,6 +97,10 @@ h3 {
 .text-btn:hover {
   color: var(--secondary-color);
   text-decoration: underline;
+}
+.text-btn[data-is-current="true"] {
+  color: var(--secondary-color);
+  cursor: default;
 }
 .text-btn.title {
   font-weight: 500;
@@ -169,8 +173,8 @@ h3 {
   left: 10px;
 }
 .btn.btn-big::after {
-  margin-left: 24px;
-  padding-left: 24px;
+  margin-left: 8px;
+  padding-left: 8px;
 }
 .btn.btn-big:hover {
   transform: translate(4px, 4px);

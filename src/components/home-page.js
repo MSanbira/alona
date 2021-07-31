@@ -65,6 +65,20 @@ export default function HomePage(props) {
           <h2 className="color-primary">select work</h2>
           <div className="btn-container">
             <a
+              href={getSubPath(Paths.TRANSPARENCY)}
+              className="btn btn-big"
+              data-sub-text="pendo mobile"
+            >
+              transparency by design
+            </a>
+            <a
+              href={getSubPath(Paths.DS)}
+              className="btn btn-big"
+              data-sub-text="pendo"
+            >
+              design system for alignment
+            </a>
+            <a
               href={getSubPath(Paths.NOMNOM)}
               className="btn btn-big"
               data-sub-text="a place for foodies"
