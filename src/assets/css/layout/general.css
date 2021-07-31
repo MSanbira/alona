@@ -240,3 +240,17 @@ footer .socials {
   display: block;
   opacity: 1;
 }
+
+.c2c-img {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: calc(min(70vh, 675px));
+  overflow: hidden;
+  margin: 56px 0;
+}
+.c2c-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

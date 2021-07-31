@@ -1,78 +1,71 @@
 import React from "react";
-import lampHeaderSrc from "../assets/images/hatch_baby/Hbaby-exp-header.png";
-
+import headerSrc from "../assets/images/ds/ds-header.svg";
+import c2cSrc from "../assets/images/ds/DS-c2c-exp.png";
 import { Paths } from "../constants";
-// import ColorPalette from "./small-components/color-palette";
-// import MobileCarousel from "./small-components/mobile-carousel";
 import AnotherApps from "./small-components/another-apps";
 
 export default function DSPage(props) {
-  const mainImgStyle = {'--main-img-color': '#004f79'}
+  const mainImgStyle = { "--main-img-color": "#CFF7FE" };
 
   return (
     <section id="hatchBabyPage">
       <div className="main-img" style={mainImgStyle}>
-        <img src={lampHeaderSrc} alt="hatch baby app" style={{padding: '16px 0 32px 0'}}/>
+        <img src={headerSrc} alt="hatch baby app" style={{ padding: "32px" }} />
       </div>
       <div className="container">
         <div className="summery-text-container">
           <div className="titles">
-            <h1>hatch baby</h1>
-            <h4>eCommerce site</h4>
+            <h3>PENDO CORE</h3>
+            <h1>Design System for Alignment</h1>
+            <h4>Recreating Pendo Heartbeat to support scale and alignment</h4>
           </div>
           <div className="text-block">
-            <h3>TL;DR</h3>
+            <h3>BACKGROUND</h3>
+            <p className="text-with-margin">
+              Pendo Heartbeat was first created as a component library 3 years
+              ago when the company first moved to Figma. At the time there were
+              ~5 designers on the team across 2 global hubs. 3 years later, the
+              team had grown to 16 designers across 5 different time zones, with
+              a forecast of doubling by the end of 2021.
+            </p>
             <p>
-              Hatch Baby is a real, live company that creates and markets smart
-              nursery peripherals. Their site currently offers 3 products. In my
-              redesign I focused on one product to represent the product page -
-              the Grow smart night light.
+              The engineering team had also grown significantly in that time,
+              along with a growing portfolio of products from different
+              acquisitions over the years. Near the end of 2020, I felt like
+              things needed to change. The library wasn’t enough, and with the
+              massive scaling we were experiencing as a company, we needed
+              something more robust to support our growing teams.
             </p>
           </div>
           <div className="text-block">
             <h3>PROJECT SPECS</h3>
             <p>
-              A student project, created as a part of my studies at
+              Rethinking our design system across all product and engineering
+              teams at{" "}
               <a
-                href="createfuture.co.il"
+                href="pendo.com"
                 className="highlight"
                 target="_blank"
                 rel="noreferrer"
               >
-                CREATE.
+                Pendo.io.
               </a>
               <br />
-              Role // UI design, Illustration
+              Role // E2E product design
               <br />
-              Year // created July, 2019
-            </p>
-          </div>
-          <div className="text-block">
-            <h3>BACKGROUND</h3>
-            <p>
-              There’s a huge array of smart gadgets created to make our lives
-              easier, and new parents are a great target demographic: they’re
-              tired, relatively young, super anxious and nervous and usually
-              have dispensible income.
-            </p>
-          </div>
-          <div className="text-block">
-            <h3>THE GOAL</h3>
-            <p>
-              Deliver a meaningful, straight-forward experience entailing as
-              much information as possible while retaining a feel of simplicity
-              and elegance.
+              Year // 2020-2021
             </p>
           </div>
         </div>
       </div>
 
+      <div className="c2c-img">
+        <img src={c2cSrc} alt="design system" />
+      </div>
+
       <div className="content-divider" />
 
-      
-
-      <AnotherApps exclude={Paths.HATCH}/>
-
+      <AnotherApps exclude={Paths.DS} />
     </section>
   );
 }

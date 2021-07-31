@@ -10,8 +10,10 @@ import createSrc from "../assets/images/about/create-exp.png";
 import pixelSrc from "../assets/images/about/pixel-exp.png";
 import academicSrc from "../assets/images/about/academic-exp.png";
 
-const createMag1 = '%d7%9b%d7%a0%d7%99%d7%a1%d7%94-%d7%9c%d7%aa%d7%97%d7%95%d7%9d/%d7%a6%d7%a2%d7%93%d7%99%d7%9d-%d7%a8%d7%90%d7%a9%d7%95%d7%a0%d7%99%d7%9d-%d7%91%d7%aa%d7%a2%d7%a9%d7%99%d7%99%d7%94-%d7%a1%d7%99%d7%a4%d7%95%d7%a8%d7%99%d7%9d-%d7%90%d7%99%d7%a9%d7%99%d7%99%d7%9d';
-const createMag2 = '%d7%94%d7%9b%d7%97-%d7%a9%d7%9c-%d7%b4%d7%a2%d7%95%d7%93-%d7%9c%d7%90%d7%b4-%d7%90%d7%95-%d7%90%d7%99%d7%9a-%d7%a7%d7%a8%d7%95%d7%9c-%d7%93%d7%95%d7%95%d7%a7-%d7%94%d7%a4%d7%9b%d7%94-%d7%90%d7%95';
+const createMag1 =
+  "%d7%9b%d7%a0%d7%99%d7%a1%d7%94-%d7%9c%d7%aa%d7%97%d7%95%d7%9d/%d7%a6%d7%a2%d7%93%d7%99%d7%9d-%d7%a8%d7%90%d7%a9%d7%95%d7%a0%d7%99%d7%9d-%d7%91%d7%aa%d7%a2%d7%a9%d7%99%d7%99%d7%94-%d7%a1%d7%99%d7%a4%d7%95%d7%a8%d7%99%d7%9d-%d7%90%d7%99%d7%a9%d7%99%d7%99%d7%9d";
+const createMag2 =
+  "%d7%94%d7%9b%d7%97-%d7%a9%d7%9c-%d7%b4%d7%a2%d7%95%d7%93-%d7%9c%d7%90%d7%b4-%d7%90%d7%95-%d7%90%d7%99%d7%9a-%d7%a7%d7%a8%d7%95%d7%9c-%d7%93%d7%95%d7%95%d7%a7-%d7%94%d7%a4%d7%9b%d7%94-%d7%90%d7%95";
 
 export default function AboutPage(props) {
   return (
@@ -24,8 +26,8 @@ export default function AboutPage(props) {
       />
       <div className="about-text-and-btns">
         <p>
-          Hi, I'm Alona, a product designer with background in
-          <span className="highlight">education and psychology,</span> with four
+          Hi, I'm Alona, a product designer with background in{" "}
+          <span className="highlight">education and psychology,</span> with five
           years’ experience in designing product UX, both as a lead and as part
           of a team of designers.
         </p>
@@ -34,16 +36,18 @@ export default function AboutPage(props) {
           market and user research, ideation and rapid prototyping. I’m a firm
           believer in teamwork, I feel it brings the best out of us, and helps
           us grow as professionals. I Majored in learning technologies and I
-          taught myself how to use nearly every design tool known to man.
+          taught myself how to use nearly every design tool known to man.{" "}
           <span className="highlight">Currently sporting Figma.</span>
         </p>
         <p>
-          I love to cook and bake and I am an avid runner in my free time. Good
-          design moves me, and I believe every user should experience
-          excellently and elegantly designed products.
+          I love to cook and bake and I keep myself honest with running,
+          Crossfit and indoor rock climbing. I love to cook and bake, and I also
+          share my home with two almost famous Instagram kitties. Good design
+          moves me, and I believe every user should experience excellently and
+          elegantly designed products.
         </p>
         <p>
-          I can be reached via email @
+          I can be reached via email @{" "}
           <span className="highlight">alona.cr@gmail.com</span>
         </p>
 

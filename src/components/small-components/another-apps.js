@@ -5,7 +5,9 @@ import arrowSrc from "../../assets/images/Vector.svg";
 
 export default function AnotherApps(props) {
   const { exclude } = props;
-  const apps = [Paths.NOMNOM, Paths.HATCH].filter((app) => app !== exclude);
+  const apps = [Paths.TRANSPARENCY, Paths.DS, Paths.NOMNOM, Paths.HATCH].filter(
+    (app) => app !== exclude
+  );
 
   return (
     <div className="container">
@@ -16,7 +18,9 @@ export default function AnotherApps(props) {
           stick around and look at some other stuff I created.
         </p>
         <img className="arrow-img" src={arrowSrc} alt="here" />
-        {apps.map((app) => getAppLink(app))}
+        <div className="btn-container">
+          {apps.map((app) => getAppLink(app))}
+        </div>
       </div>
     </div>
   );
@@ -24,31 +28,41 @@ export default function AnotherApps(props) {
 
 const getAppLink = (app) => {
   switch (app) {
+    case Paths.TRANSPARENCY:
+      return (
+        <AppLink
+          path={Paths.TRANSPARENCY}
+          title="transparency by design"
+          subText="pendo mobile"
+        />
+      );
+    case Paths.DS:
+      return (
+        <AppLink
+          path={Paths.DS}
+          title="design system for alignment"
+          subText="pendo"
+        />
+      );
     case Paths.HATCH:
       return (
-        <div className="btn-container">
-          <a
-            href={getSubPath(Paths.HATCH)}
-            className="btn"
-            data-sub-text="ecommerce ui"
-          >
-            hatch baby
-          </a>
-        </div>
+        <AppLink path={Paths.HATCH} title="hatch baby" subText="ecommerce ui" />
       );
     case Paths.NOMNOM:
       return (
-        <div className="btn-container">
-          <a
-            href={getSubPath(Paths.NOMNOM)}
-            className="btn"
-            data-sub-text="a place for foodies"
-          >
-            nomnom
-          </a>
-        </div>
+        <AppLink
+          path={Paths.NOMNOM}
+          title="nomnom"
+          subText="a place for foodies"
+        />
       );
     default:
       break;
   }
 };
+
+const AppLink = ({ path, title, subText }) => (
+  <a href={getSubPath(path)} className="btn" data-sub-text={subText}>
+    {title}
+  </a>
+);
