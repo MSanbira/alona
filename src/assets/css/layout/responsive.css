@@ -16,6 +16,20 @@
     left: -258px;
   }
 
+  .c2c-img img {
+    min-width: 1200px;
+  }
+
+  .right-img-to-between {
+    grid-template-columns: 1fr;
+    grid-template-rows: unset;
+    gap: 24px;
+  }
+  .right-img-to-between > *:nth-child(2) {
+    grid-row: unset;
+    grid-column: unset;
+  }
+
   .about-text-and-btns {
     width: calc(100% - 56px);
     margin: 0 28px;
@@ -137,6 +151,10 @@
 
   .main-img {
     max-height: 275px;
+  }
+
+  .c2c-img img {
+    min-width: 700px;
   }
 
   .summery-text-container {

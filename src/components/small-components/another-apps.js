@@ -31,6 +31,7 @@ const getAppLink = (app) => {
     case Paths.TRANSPARENCY:
       return (
         <AppLink
+          key={Paths.TRANSPARENCY}
           path={Paths.TRANSPARENCY}
           title="transparency by design"
           subText="pendo mobile"
@@ -39,6 +40,7 @@ const getAppLink = (app) => {
     case Paths.DS:
       return (
         <AppLink
+          key={Paths.DS}
           path={Paths.DS}
           title="design system for alignment"
           subText="pendo"
@@ -46,11 +48,17 @@ const getAppLink = (app) => {
       );
     case Paths.HATCH:
       return (
-        <AppLink path={Paths.HATCH} title="hatch baby" subText="ecommerce ui" />
+        <AppLink
+          key={Paths.HATCH}
+          path={Paths.HATCH}
+          title="hatch baby"
+          subText="ecommerce ui"
+        />
       );
     case Paths.NOMNOM:
       return (
         <AppLink
+          key={Paths.NOMNOM}
           path={Paths.NOMNOM}
           title="nomnom"
           subText="a place for foodies"

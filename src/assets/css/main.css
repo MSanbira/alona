@@ -15,6 +15,10 @@ body {
   font-weight: var(--weight-normal);
 }
 
+li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
 .hide {
   display: none !important;
 }
@@ -48,6 +52,9 @@ body {
 
 .centered-text {
   text-align: center !important;
+}
+.bold-text {
+  font-weight: var(--weight-bold);
 }
 
 .highlight {
