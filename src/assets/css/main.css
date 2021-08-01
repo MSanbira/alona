@@ -27,6 +27,10 @@ li:not(:last-child) {
   max-width: 100%;
 }
 
+.shadowed {
+  box-shadow: 6px 6px 30px rgba(0, 0, 0, 0.12);
+}
+
 .container {
   box-sizing: unset;
   width: 1278px;
@@ -146,8 +150,8 @@ h3 {
 .btn[data-sub-text]::after {
   content: attr(data-sub-text);
   font-weight: var(--weight-normal);
-  margin-left: 16px;
-  padding-left: 16px;
+  margin-left: 8px;
+  padding-left: 8px;
   border-left: solid var(--primary-color) 2px;
   opacity: 0;
   transition: 0.3s;
@@ -194,17 +198,17 @@ h3 {
 .btn img:not(:last-child) {
   margin-right: 8px;
 }
-
 .text-container-1 {
   width: 424px;
 }
-
 .text-container-2 {
   width: 464px;
 }
-
 .text-container-3 {
   width: 504px;
+}
+.text-container-4 {
+  width: 640px;
 }
 
 .divider {

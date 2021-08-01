@@ -245,7 +245,7 @@ footer .socials {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  height: calc(min(70vh, 675px));
+  max-height: calc(min(70vh, 675px));
   overflow: hidden;
   margin: 56px 0;
 }
@@ -260,7 +260,7 @@ footer .socials {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 16px;
 }
 .img-with-desc h4 {
   font-size: 12px;

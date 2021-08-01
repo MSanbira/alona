@@ -7,6 +7,7 @@ export default function ImgWithDesc(props) {
     src = "",
     description = "",
     alt = description || "work image",
+    isAlignStart = false
   } = props;
 
   const imgDom = useRef(null);
@@ -15,7 +16,7 @@ export default function ImgWithDesc(props) {
   const updateWidth = () => setImgWidth(imgDom?.current?.offsetWidth)
 
   return (
-    <div className={"img-with-desc " + className}>
+    <div className={"img-with-desc " + className} style={{alignItems: isAlignStart ? 'flex-start' : 'center'}}>
       <img className={imgClass} src={src} alt={alt} ref={imgDom} onLoad={updateWidth}/>
       <h4 style={{maxWidth: imgWidth || 'unset'}}>{description}</h4>
     </div>

@@ -7,6 +7,10 @@ import btn_stickersheetSrc from "../assets/images/ds/DS-btn_stickersheet-exp.png
 import doubleMatrixSrc from "../assets/images/ds/DS-double-matrix-exp.png";
 import roadmapSrc from "../assets/images/ds/DS-roadmap-exp.png";
 import poniesSrc from "../assets/images/ds/DS-ponies-exp.png";
+import formSrc from "../assets/images/ds/DS-form-exp.png";
+import qualSrc from "../assets/images/ds/DS-qual-exp.png";
+import doc1Src from "../assets/images/ds/DS-doc1-exp.png";
+import doc2Src from "../assets/images/ds/DS-doc2-exp.png";
 import { Paths } from "../constants";
 import AnotherApps from "./small-components/another-apps";
 import ImgWithDesc from "./small-components/img-with-desc";
@@ -104,7 +108,7 @@ export default function DSPage(props) {
           </p>
 
           <ImgWithDesc
-            imgClass="contained-img"
+            imgClass="contained-img shadowed"
             src={value2users3Src}
             description="An exert from a workshop I led on documentation during our design sprint."
           />
@@ -142,7 +146,7 @@ export default function DSPage(props) {
 
       <div className="container">
         <ImgWithDesc
-          imgClass="contained-img"
+          imgClass="contained-img shadowed"
           src={btn_stickersheetSrc}
           description={
             <>
@@ -155,6 +159,7 @@ export default function DSPage(props) {
               due to lack of alignment on naming between design and devs.
             </>
           }
+          isAlignStart
         />
       </div>
 
@@ -175,10 +180,11 @@ export default function DSPage(props) {
           </div>
 
           <ImgWithDesc
-            imgClass="contained-img"
+            imgClass="contained-img shadowed"
             src={doubleMatrixSrc}
             description="The matrix. Highlighted is the quadron with least effort to create (low resources) with the highest amount 
             of control (meaning I don’t need to ask for outside resourcing)."
+            isAlignStart
           />
 
           <div>
@@ -208,14 +214,14 @@ export default function DSPage(props) {
 
       <div className="container margin-down">
         <ImgWithDesc
-          imgClass="contained-img"
+          imgClass="contained-img shadowed"
           src={roadmapSrc}
           description="The product roadmap I ended up with for the design system project."
         />
       </div>
 
       <div className="container">
-        <div className="right-img-to-between margin-down">
+        <div className="right-img-to-between">
           <div>
             <h3 className="text-with-margin">
               Tigers, and lions and buttons, oh my!
@@ -248,6 +254,95 @@ export default function DSPage(props) {
           </p>
         </div>
       </div>
+
+      <div className="content-divider" />
+
+      <div className="container">
+        <div className="right-img-to-between margin-down">
+          <div>
+            <h3 className="text-with-margin">Getting Buy-in From Engineers</h3>
+            <p>
+              The audit we had done on the system tokens had sparked
+              conversations across the organisation, and engineers started
+              knocking on my (virtual) door, one by one. They talked about the
+              lack of accountability, the gap in knowledge and documentation.{" "}
+              <span className="bold-text">
+                But most of all, they talked about the misalignment between
+                design and development.
+              </span>
+            </p>
+          </div>
+
+          <ImgWithDesc
+            imgClass="contained-img shadowed"
+            src={formSrc}
+            description="After partnering with design and engineering management, 
+              we sought to further undertand problems in the seam between design and development."
+          />
+
+          <p>
+            The idea of tokens, and specifically how to structure color tokens
+            in the system, was a hard conversation to have with 16 other people.
+            By the time engineering came knocking, I had already gone through
+            most of the hard work - which created{" "}
+            <span className="bold-text">
+              a rare opportunity for a grassroots movement to grow, led
+              hand-in-hand, by design and development.
+            </span>{" "}
+            We overhauled the color tokens and created a single source of truth
+            over a 3-day period as a hackathon project.
+          </p>
+        </div>
+      </div>
+
+      <div className="container">
+        <ImgWithDesc
+          imgClass="contained-img shadowed"
+          src={qualSrc}
+          description={"Some of the themes that emerged from the survey"}
+          isAlignStart
+        />
+      </div>
+
+      <div className="content-divider" />
+
+      <div className="container">
+        <div className="left-title-and-p">
+          <h3>Heartbeat Reconstructed, 2.0</h3>
+          <p className="text-container-4">
+            After picking Heartbeat apart, and figuring out what about it wasn’t
+            working, It was time to reconstruct. Our tiger team, now known as
+            “The Heartbeat Ponies”, had broken down my roadmap into bitesize
+            tasks, helping me make decisions and bring ideas to life. We are
+            currently in the weeds of governance models and drop-down
+            components, and planning to grow this tiger team to a full blown
+            systems team, by early next year.
+          </p>
+        </div>
+      </div>
+
+      <div className="content-divider" />
+      <div className="container">
+        <h1>placeholder</h1>
+      </div>
+      <div className="content-divider" />
+      <div className="container">
+        <h3 className="margin-down">
+          Documentation - Creating foundations for accountability
+        </h3>
+        <div className="offset-imgs-container">
+          <img src={doc1Src} className="shadowed" alt="design system" />
+          <ImgWithDesc
+            imgClass="shadowed"
+            src={doc2Src}
+            description="Some of the conversations we had when thinking about what
+            documentation might look like for Pendo Heartbeat, as part of a design sprint."
+            isAlignStart
+          />
+        </div>
+      </div>
+
+      <div className="content-divider" />
 
       <div className="content-divider" />
 

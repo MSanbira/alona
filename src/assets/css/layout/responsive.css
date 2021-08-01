@@ -94,6 +94,17 @@
   .birds-container img {
     height: 150px;
   }
+
+  .offset-imgs-container {
+    align-items: center;
+    gap: 32px;
+  }
+  .offset-imgs-container > *:last-child {
+    align-self: center;
+  }
+  .offset-imgs-container img {
+    width: 100%;
+  }
 }
 @media (max-width: 765px) {
   body {
@@ -121,7 +132,8 @@
 
   .text-container-1,
   .text-container-2,
-  .text-container-3 {
+  .text-container-3,
+  .text-container-4 {
     width: 100%;
   }
 
