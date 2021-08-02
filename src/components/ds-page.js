@@ -11,6 +11,15 @@ import formSrc from "../assets/images/ds/DS-form-exp.png";
 import qualSrc from "../assets/images/ds/DS-qual-exp.png";
 import doc1Src from "../assets/images/ds/DS-doc1-exp.png";
 import doc2Src from "../assets/images/ds/DS-doc2-exp.png";
+import colors1Src from "../assets/images/ds/DS-colors1-exp.png";
+import colors2Src from "../assets/images/ds/DS-colors2-exp.png";
+import colors3Src from "../assets/images/ds/DS-colors3-exp.png";
+import colors4Src from "../assets/images/ds/DS-colors4-exp.png";
+import temp1Src from "../assets/images/ds/DS-temp1-exp.png";
+import temp2Src from "../assets/images/ds/DS-temp2-exp.png";
+import temp3Src from "../assets/images/ds/DS-temp3-exp.png";
+import temp4Src from "../assets/images/ds/DS-temp4-exp.png";
+import longArrowSrc from "../assets/images/ds/long-arrow.svg";
 import { Paths } from "../constants";
 import AnotherApps from "./small-components/another-apps";
 import ImgWithDesc from "./small-components/img-with-desc";
@@ -19,7 +28,7 @@ export default function DSPage(props) {
   const mainImgStyle = { "--main-img-color": "#CFF7FE" };
 
   return (
-    <section id="hatchBabyPage">
+    <section id="dsPage">
       <div className="main-img" style={mainImgStyle}>
         <img src={headerSrc} alt="design system" style={{ padding: "32px" }} />
       </div>
@@ -323,14 +332,52 @@ export default function DSPage(props) {
 
       <div className="content-divider" />
       <div className="container">
-        <h1>placeholder</h1>
+        <h3 className="margin-down">
+          Tokens - design & engineering co-leading
+        </h3>
+        <div className="row-to-column sm-margin-down">
+          <img src={colors1Src} alt="design system" className="shadowed" />
+          <img
+            src={longArrowSrc}
+            alt="design system"
+            className="to-flip"
+            style={{ padding: "60px 0" }}
+          />
+          <img src={colors2Src} alt="design system" className="shadowed" />
+        </div>
+        <h5 className="margin-down">
+          Color option tokens In Figma (left), decision tokens (right). We
+          audited use and created
+          <br />a descriptive decision token file to test if it would decrease
+          decision-making events for IC designers.
+        </h5>
+
+        <div className="row-to-column sm-margin-down">
+          <img src={colors3Src} alt="design system" className="shadowed" />
+          <img
+            src={longArrowSrc}
+            alt="design system"
+            className="to-flip"
+            style={{ padding: "60px 0" }}
+          />
+          <img src={colors4Src} alt="design system" className="shadowed" />
+        </div>
+        <h5>
+          Code option tokens (left) and decision tokens (right). To align with
+          development, over the engineering hackathon, we created a single
+          source of truth with aligned hues and consistent naming.
+          <br />
+          In the future we plan to tackle more foundational tokens like
+          transparencies, shadows and typography. Before the sprint we had 3
+          different color files in production, in 2 different code languages.
+        </h5>
       </div>
       <div className="content-divider" />
       <div className="container">
         <h3 className="margin-down">
           Documentation - Creating foundations for accountability
         </h3>
-        <div className="offset-imgs-container">
+        <div className="offset-imgs-container margin-down">
           <img src={doc1Src} className="shadowed" alt="design system" />
           <ImgWithDesc
             imgClass="shadowed"
@@ -340,11 +387,26 @@ export default function DSPage(props) {
             isAlignStart
           />
         </div>
+
+        <div className="crossing-imgs">
+          <img src={temp1Src} className="shadowed" alt="design system" />
+          <img src={temp2Src} className="shadowed md-margin-down" alt="design system" />
+        </div>
+
+        <div
+          className="row-to-column sm-margin-down"
+          style={{ alignItems: "flex-start", justifyContent: "flex-start" }}
+        >
+          <img src={temp3Src} className="shadowed" alt="design system" />
+          <img src={temp4Src} className="shadowed" alt="design system" />
+        </div>
+        <h5>
+          A documentation template & content example for components created
+          based on the design sprint work and industry standard.
+        </h5>
       </div>
 
-      <div className="content-divider" />
-
-      <div className="content-divider" />
+      <div className="content-divider full-width" />
 
       <AnotherApps exclude={Paths.DS} />
     </section>

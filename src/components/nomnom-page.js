@@ -89,7 +89,7 @@ export default function NomnomPage(props) {
         </div>
       </div>
 
-      <div className="content-divider"></div>
+      <div className="content-divider"/>
 
       <div className="container">
         <div className="centered-title-and-p">
@@ -116,7 +116,7 @@ export default function NomnomPage(props) {
         ]}
       />
 
-      <div className="content-divider"></div>
+      <div className="content-divider"/>
 
       <div className="container">
         <div className="centered-title-and-p">
@@ -140,7 +140,7 @@ export default function NomnomPage(props) {
         </div>
       </div>
 
-      <div className="content-divider"></div>
+      <div className="content-divider"/>
 
       <div className="container">
         <div className="centered-title-and-p">
@@ -162,7 +162,7 @@ export default function NomnomPage(props) {
         <img src={moreLeeSrc} alt="nomnom mockup" />
       </div>
 
-      <div className="content-divider"></div>
+      <div className="content-divider"/>
 
       <div className="container">
         <div className="left-title-and-p">
@@ -189,7 +189,7 @@ export default function NomnomPage(props) {
         </div>
       </div>
 
-      <div className="content-divider"></div>
+      <div className="content-divider"/>
 
       <div className="container font-selection-container">
         <div className="font-selection-section">
@@ -257,7 +257,7 @@ export default function NomnomPage(props) {
         </div>
       </div>
 
-      <div className="content-divider"></div>
+      <div className="content-divider full-width"/>
 
       <AnotherApps exclude={Paths.NOMNOM}/>
     </section>

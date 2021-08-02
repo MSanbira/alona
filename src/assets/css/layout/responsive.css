@@ -30,6 +30,28 @@
     grid-column: unset;
   }
 
+  .row-to-column {
+    flex-direction: column;
+  }
+  .row-to-column .to-flip {
+    transform: rotate(90deg);
+  }
+  .row-to-column img {
+    max-width: 100%;
+  }
+
+  .crossing-imgs {
+    display: grid;
+    grid-template-columns: unset;
+    grid-template-rows: unset;
+    gap: 24px;
+  }
+  .crossing-imgs.crossing-imgs img {
+    grid-column: unset;
+    grid-row: unset;
+    max-width: 100%;
+  }
+
   .about-text-and-btns {
     width: calc(100% - 56px);
     margin: 0 28px;

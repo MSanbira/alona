@@ -176,7 +176,7 @@ export default function HatchBabyPage(props) {
         ]}
       />
 
-      <div className="content-divider"></div>
+      <div className="content-divider"/>
 
       <div className="container">
         <div className="centered-title-and-p margin-down">
@@ -327,7 +327,7 @@ export default function HatchBabyPage(props) {
         ]}
       />
 
-      <div className="content-divider"></div>
+      <div className="content-divider full-width"/>
 
       <AnotherApps exclude={Paths.HATCH}/>
 

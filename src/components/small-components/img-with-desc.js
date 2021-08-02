@@ -18,7 +18,7 @@ export default function ImgWithDesc(props) {
   return (
     <div className={"img-with-desc " + className} style={{alignItems: isAlignStart ? 'flex-start' : 'center'}}>
       <img className={imgClass} src={src} alt={alt} ref={imgDom} onLoad={updateWidth}/>
-      <h4 style={{maxWidth: imgWidth || 'unset'}}>{description}</h4>
+      <h5 style={{maxWidth: imgWidth || 'unset'}}>{description}</h5>
     </div>
   );
 }
