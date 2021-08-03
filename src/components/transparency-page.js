@@ -338,7 +338,7 @@ export default function TransparencyPage(props) {
 
       <div className="content-divider full-width" />
 
-      <AnotherApps exclude={Paths.HATCH} />
+      <AnotherApps exclude={Paths.TRANSPARENCY} />
     </section>
   );
 }
