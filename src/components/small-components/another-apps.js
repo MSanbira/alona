@@ -33,7 +33,7 @@ const getAppLink = (app) => {
         <AppLink
           key={Paths.TRANSPARENCY}
           path={Paths.TRANSPARENCY}
-          title="transparency by design"
+          title="transparency"
           subText="pendo mobile"
         />
       );
@@ -42,7 +42,7 @@ const getAppLink = (app) => {
         <AppLink
           key={Paths.DS}
           path={Paths.DS}
-          title="design system for alignment"
+          title="design system"
           subText="pendo"
         />
       );

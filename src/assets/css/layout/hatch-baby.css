@@ -136,16 +136,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 24px;
 }
 .iconography-item > div {
-  height: 128px;
+  height: 126px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .iconography-item h3 {
   font-family: "Open Sans";
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 300;
   text-align: center;
   color: #050505;

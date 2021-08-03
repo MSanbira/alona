@@ -12,16 +12,15 @@
 }
 
 .about-text-and-btns {
-  padding: 56px 88px;
+  padding: 56px 56px;
   position: relative;
   top: -70px;
   background: white;
   width: 914px;
   margin: 0 auto;
 }
-.about-text-and-btns p {
-  margin-bottom: 24px;
-  line-height: 28px;
+.about-text-and-btns > p {
+  margin: 0 30px 24px 30px;  
 }
 
 .about-text-and-btns .btn-container {
@@ -50,10 +49,8 @@
   display: grid;
   gap: 24px;
 }
-.extracurricular-section p {
-  margin-bottom: 0;
-}
 .extracurricular-section a {
+  display: block;
   color: var(--secondary-color);
 }
 .extracurricular-section img {

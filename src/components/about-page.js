@@ -40,11 +40,10 @@ export default function AboutPage(props) {
           <span className="highlight">Currently sporting Figma.</span>
         </p>
         <p>
-          I love to cook and bake and I keep myself honest with running,
-          Crossfit and indoor rock climbing. I love to cook and bake, and I also
-          share my home with two almost famous Instagram kitties. Good design
-          moves me, and I believe every user should experience excellently and
-          elegantly designed products.
+          I keep myself honest with running, Crossfit and indoor rock climbing.
+          I love to cook and bake, and I also share my home with two almost
+          famous Instagram kitties. Good design moves me, and I believe every
+          user should experience excellently and elegantly designed products.
         </p>
         <p>
           I can be reached via email @{" "}
@@ -143,7 +142,7 @@ export default function AboutPage(props) {
               The critique was held by the largest Israeli private design academy, Netcraft.`}
             links={[
               {
-                text: "This is What They Do",
+                text: "This Is What They Do",
                 href: "https://netcraftacademy.co.il/",
               },
             ]}
@@ -156,7 +155,7 @@ export default function AboutPage(props) {
             <span className="hide-on-mobile">Email me</span>
           </a>
           <a
-            href="/alona-sanbira-cv.pdf"
+            href={process.env.PUBLIC_URL + "/alona-sanbira-cv.pdf"}
             target="_blank"
             className="btn btn-long"
             rel="noreferrer"
@@ -177,11 +176,13 @@ const ExtracurricularSection = (props) => {
       <img src={imgSrc} alt="extracurricular" />
       <h3>{title}</h3>
       <p>{bodyText}</p>
-      {links.map(({ text, href }) => (
-        <a key={href} href={href} target="_blank" rel="noreferrer">
-          {text}
-        </a>
-      ))}
+      <div>
+        {links.map(({ text, href }) => (
+          <a key={href} href={href} target="_blank" rel="noreferrer">
+            {text}
+          </a>
+        ))}
+      </div>
     </div>
   );
 };

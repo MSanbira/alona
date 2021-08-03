@@ -87,7 +87,7 @@ export default function MainHeader(props) {
               <img src={mailSrc} alt="contact me" />
             </a>
             <a
-              href="/alona-sanbira-cv.pdf"
+              href={process.env.PUBLIC_URL + "/alona-sanbira-cv.pdf"}
               target="_blank"
               rel="noreferrer"
               className="btn btn-small"
@@ -98,7 +98,7 @@ export default function MainHeader(props) {
         </nav>
       </div>
       <a
-        href="/alona-sanbira-cv.pdf"
+        href={process.env.PUBLIC_URL + "/alona-sanbira-cv.pdf"}
         target="_blank"
         className="btn btn-small"
         rel="noreferrer"

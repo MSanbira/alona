@@ -55,6 +55,9 @@
   animation: fade-in 1.5s ease-in-out;
   max-width: 460px;
 }
+.main-desc a {
+  text-decoration: underline;
+}
 
 .conffetti-img {
   animation: fade-in-2 2.5s ease-in-out;
@@ -70,6 +73,12 @@
   align-items: center;
   animation: fade-in 1.5s ease-in-out;
   margin-bottom: 90px;
+}
+.select-work-container .arrow-img {
+  display: none;
+  position: absolute;
+  top: -120px;
+  left: calc(50% - 4px);
 }
 .select-work-container h2 {
   text-transform: uppercase;

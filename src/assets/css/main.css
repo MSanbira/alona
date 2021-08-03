@@ -10,7 +10,7 @@
 
 body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  line-height: 1.5;
+  line-height: 1.6;
   margin-top: 83px;
   font-weight: var(--weight-normal);
 }
@@ -88,7 +88,7 @@ li {
   color: var(--text-color);
   font-size: 18px;
   font-weight: var(--weight-normal);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 h1 {
@@ -220,7 +220,7 @@ h5 {
   width: 464px;
 }
 .text-container-3 {
-  width: 504px;
+  width: 530px;
 }
 .text-container-4 {
   width: 650px;

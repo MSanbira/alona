@@ -354,9 +354,7 @@ export default function DSPage(props) {
         </div>
         <h5 className="margin-down">
           Color option tokens In Figma ({isTablet() ? "up" : "left"}), decision
-          tokens ({isTablet() ? "down" : "right"}). We audited use and created
-          <br />a descriptive decision token file to test if it would decrease
-          decision-making events for IC designers.
+          tokens ({isTablet() ? "down" : "right"}).
         </h5>
 
         <div className="row-to-column sm-margin-down">
@@ -369,19 +367,19 @@ export default function DSPage(props) {
           />
           <img src={colors4Src} alt="design system" className="shadowed" />
         </div>
-        <h5>
+        <h5 className="margin-down">
           Code option tokens ({isTablet() ? "up" : "left"}) and decision tokens
-          ({isTablet() ? "down" : "right"}). To align with development, over the
-          engineering hackathon, we created a single source of truth with
-          aligned hues and consistent naming.
-          <br />
-          In the future we plan to tackle more foundational tokens like
-          transparencies, shadows and typography. Before the sprint we had 3
-          different color files in production, in 2 different code languages.
+          ({isTablet() ? "down" : "right"}).
         </h5>
-      </div>
-      <div className="content-divider" />
-      <div className="container">
+        <p className="margin-down text-container-4">
+          On the design side, we audited use and created a descriptive decision
+          token file to test if it would decrease decision-making events for IC
+          designers. To align with development, we created a single source of
+          truth with aligned hues and consistent naming. In the future we plan
+          to tackle more foundational tokens like trnasparencies, shadows and
+          typography. Before the sprint we had 3 different color files in
+          production, in 2 different code languages.
+        </p>
         <h3 className="text-with-margin">
           Documentation - Creating foundations for accountability
         </h3>

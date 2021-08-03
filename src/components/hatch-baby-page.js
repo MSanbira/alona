@@ -297,7 +297,7 @@ export default function HatchBabyPage(props) {
       <div className="content-divider" />
 
       <div className="container">
-        <div className="centered-title-and-p margin-down">
+        <div className="left-title-and-p margin-down">
           <h3>RESEARCH & INSPIRATION</h3>
           <p className="text-container-3">
             When researching competitors I realized most sites aim to enhance
@@ -318,7 +318,7 @@ export default function HatchBabyPage(props) {
       <div className="content-divider" />
 
       <div className="container">
-        <div className="centered-title-and-p margin-down">
+        <div className="left-title-and-p margin-down">
           <h3>ILLUSTRATIONS</h3>
           <p className="text-container-3">
             As a design choice, I aimed to create a soft, childlike interface

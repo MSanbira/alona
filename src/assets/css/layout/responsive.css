@@ -452,4 +452,8 @@
   }
 }
 
-/*# sourceMappingURL=responsive.css.map */
+@media (max-height: 1010px) and (min-width:1220px) {
+  .select-work-container .arrow-img {
+    display: block;
+  }
+}

@@ -6,6 +6,7 @@ import catMobileSrc from '../assets/images/Cat-Mobile.png';
 import conffetiSrc from '../assets/images/Conffetti.svg';
 import smallConfetti1Src from '../assets/images/small_confetti1.svg';
 import smallConfetti2Src from '../assets/images/small_confetti2.svg';
+import arrowHomepageSrc from '../assets/images/arrow-homepage.svg';
 import { getSubPath } from "../utils";
 
 export default function HomePage(props) {
@@ -52,6 +53,11 @@ export default function HomePage(props) {
         </p>
 
         <div className="select-work-container">
+        <img
+            src={arrowHomepageSrc}
+            className="arrow-img"
+            alt="scroll down"
+          />
           <img
             src={smallConfetti1Src}
             className="confetti-sm1-img"
