@@ -10,7 +10,7 @@ import flowchart1MSrc from "../assets/images/transparency/pend-flowchart1-exp-m.
 import flowchart2Src from "../assets/images/transparency/pend-flowchart2-exp.png";
 import flowchart2MSrc from "../assets/images/transparency/pend-flowchart2-exp-m.png";
 import updatedSrc from "../assets/images/transparency/pend-updated-exp.png";
-import gifSrc from "../assets/images/transparency/pend-gif-exp.png";
+import gifSrc from "../assets/images/transparency/page-rule-vid.gif";
 import iterationSrc from "../assets/images/transparency/pend-iteration-exp.png";
 import iterationMSrc from "../assets/images/transparency/pend-iteration-exp-m.png";
 
