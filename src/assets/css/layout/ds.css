@@ -1,9 +1,0 @@
-.offset-imgs-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 56px;
-}
-.offset-imgs-container > *:last-child {
-    align-self: flex-end;
-}

@@ -42,8 +42,8 @@ nav .work-nav-links::before {
   display: block;
   position: absolute;
   left: 0;
-  top: -32px;
-  height: 32px;
+  top: -24px;
+  height: 24px;
   width: 100%;
 }
 nav .work-nav-links .text-btn {
@@ -128,7 +128,7 @@ footer .socials {
   margin-bottom: 16px;
 }
 .summery-text-container .titles h4 {
-  line-height: 1;
+  line-height: 1.2;
 }
 .summery-text-container .text-block h3 {
   margin-bottom: 24px;
@@ -297,4 +297,14 @@ footer .socials {
 .crossing-imgs img:last-child {
   grid-column: 2 / 4;
   grid-row: 2 / 4;
+}
+
+.offset-imgs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 56px;
+}
+.offset-imgs-container > *:last-child {
+  align-self: flex-end;
 }

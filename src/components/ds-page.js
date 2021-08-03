@@ -23,6 +23,7 @@ import longArrowSrc from "../assets/images/ds/long-arrow.svg";
 import { Paths } from "../constants";
 import AnotherApps from "./small-components/another-apps";
 import ImgWithDesc from "./small-components/img-with-desc";
+import { isTablet } from "../utils";
 
 export default function DSPage(props) {
   const mainImgStyle = { "--main-img-color": "#CFF7FE" };
@@ -332,9 +333,15 @@ export default function DSPage(props) {
 
       <div className="content-divider" />
       <div className="container">
-        <h3 className="margin-down">
+        <h3 className="text-with-margin">
           Tokens - design & engineering co-leading
         </h3>
+        <p className="margin-down text-container-4">
+          As mentioned before, the moment the opportunity arose, I combined
+          efforts with engineers who hold this issue near and dear, and worked
+          with them during a hackathon to align the entire product platform -
+          starting with the most rudimentary element: color.
+        </p>
         <div className="row-to-column sm-margin-down">
           <img src={colors1Src} alt="design system" className="shadowed" />
           <img
@@ -346,8 +353,8 @@ export default function DSPage(props) {
           <img src={colors2Src} alt="design system" className="shadowed" />
         </div>
         <h5 className="margin-down">
-          Color option tokens In Figma (left), decision tokens (right). We
-          audited use and created
+          Color option tokens In Figma ({isTablet() ? "up" : "left"}), decision
+          tokens ({isTablet() ? "down" : "right"}). We audited use and created
           <br />a descriptive decision token file to test if it would decrease
           decision-making events for IC designers.
         </h5>
@@ -363,9 +370,10 @@ export default function DSPage(props) {
           <img src={colors4Src} alt="design system" className="shadowed" />
         </div>
         <h5>
-          Code option tokens (left) and decision tokens (right). To align with
-          development, over the engineering hackathon, we created a single
-          source of truth with aligned hues and consistent naming.
+          Code option tokens ({isTablet() ? "up" : "left"}) and decision tokens
+          ({isTablet() ? "down" : "right"}). To align with development, over the
+          engineering hackathon, we created a single source of truth with
+          aligned hues and consistent naming.
           <br />
           In the future we plan to tackle more foundational tokens like
           transparencies, shadows and typography. Before the sprint we had 3
@@ -374,9 +382,16 @@ export default function DSPage(props) {
       </div>
       <div className="content-divider" />
       <div className="container">
-        <h3 className="margin-down">
+        <h3 className="text-with-margin">
           Documentation - Creating foundations for accountability
         </h3>
+        <p className="margin-down text-container-4">
+          Another area I felt passionate about following my research was
+          documentation. But Rome wasn’t built in a day nor was it built by a
+          single human. I siezed the opportunity in the form of time with my
+          pony-team to have an open and educated conversation on what we think
+          documentation should look like for it to work for us.
+        </p>
         <div className="offset-imgs-container margin-down">
           <img src={doc1Src} className="shadowed" alt="design system" />
           <ImgWithDesc
@@ -388,9 +403,23 @@ export default function DSPage(props) {
           />
         </div>
 
+        <h3 className="text-with-margin">interim outcome</h3>
+        <p className="margin-down text-container-4">
+          During the weeks following our sprint I took all the inputs from the
+          team and created a template for us to start with. The team was
+          immediately invited to an a-sync feedback session and this is the
+          start we landed on. It’s still missing a few key ingredients, namely,
+          accessibility guidelines, but that will be corrected in the following
+          quarter.
+        </p>
+
         <div className="crossing-imgs">
           <img src={temp1Src} className="shadowed" alt="design system" />
-          <img src={temp2Src} className="shadowed md-margin-down" alt="design system" />
+          <img
+            src={temp2Src}
+            className="shadowed md-margin-down"
+            alt="design system"
+          />
         </div>
 
         <div

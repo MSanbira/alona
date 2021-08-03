@@ -20,6 +20,7 @@ import daynoSrc from "../assets/images/hatch_baby/dayno.png";
 import birds3Src from "../assets/images/hatch_baby/birds3.png";
 import birds2Src from "../assets/images/hatch_baby/birds2.png";
 import birds1Src from "../assets/images/hatch_baby/birds1.png";
+import backgroundPill from "../assets/images/hatch_baby/hbaby-paleBlue-BG.svg";
 
 import { Paths } from "../constants";
 import ColorPalette from "./small-components/color-palette";
@@ -27,12 +28,16 @@ import MobileCarousel from "./small-components/mobile-carousel";
 import AnotherApps from "./small-components/another-apps";
 
 export default function HatchBabyPage(props) {
-  const mainImgStyle = {'--main-img-color': '#004f79'}
+  const mainImgStyle = { "--main-img-color": "#004f79" };
 
   return (
     <section id="hatchBabyPage">
       <div className="main-img" style={mainImgStyle}>
-        <img src={lampHeaderSrc} alt="hatch baby app" style={{padding: '16px 0 32px 0'}}/>
+        <img
+          src={lampHeaderSrc}
+          alt="hatch baby app"
+          style={{ padding: "16px 0 32px 0" }}
+        />
       </div>
       <div className="container">
         <div className="summery-text-container">
@@ -176,7 +181,7 @@ export default function HatchBabyPage(props) {
         ]}
       />
 
-      <div className="content-divider"/>
+      <div className="content-divider" />
 
       <div className="container">
         <div className="centered-title-and-p margin-down">
@@ -187,7 +192,7 @@ export default function HatchBabyPage(props) {
             parents are critical to understanding the product’s worth.
           </p>
         </div>
-        <div className="does-it-all-container">
+        <div className="does-it-all-container" style={{backgroundImage: "url(" + backgroundPill + ")" }}>
           <h2 className="hide-on-mobile">The sleep device that does it all</h2>
           <div className="features-section">
             <div className="feature-item hide-on-mobile">
@@ -237,7 +242,9 @@ export default function HatchBabyPage(props) {
         </div>
         <div className="iconography-container">
           <div className="iconography-item">
-            <img src={shippingSrc} alt="shipping" />
+            <div>
+              <img src={shippingSrc} alt="shipping" />
+            </div>
             <h3>
               Free
               <br />
@@ -245,7 +252,9 @@ export default function HatchBabyPage(props) {
             </h3>
           </div>
           <div className="iconography-item">
-            <img src={recycleSrc} alt="recycle" />
+            <div>
+              <img src={recycleSrc} alt="recycle" />
+            </div>
             <h3>
               Recycled
               <br />
@@ -253,7 +262,9 @@ export default function HatchBabyPage(props) {
             </h3>
           </div>
           <div className="iconography-item">
-            <img src={calendarSrc} alt="calendar" />
+            <div>
+              <img src={calendarSrc} alt="calendar" />
+            </div>
             <h3>
               5-year
               <br />
@@ -261,7 +272,9 @@ export default function HatchBabyPage(props) {
             </h3>
           </div>
           <div className="iconography-item">
-            <img src={truckSrc} alt="truck" />
+            <div>
+              <img src={truckSrc} alt="truck" />
+            </div>
             <h3>
               Same-day
               <br />
@@ -269,7 +282,9 @@ export default function HatchBabyPage(props) {
             </h3>
           </div>
           <div className="iconography-item">
-            <img src={soundsSrc} alt="sounds" />
+            <div>
+              <img src={soundsSrc} alt="sounds" />
+            </div>
             <h3>
               Original
               <br />
@@ -327,10 +342,9 @@ export default function HatchBabyPage(props) {
         ]}
       />
 
-      <div className="content-divider full-width"/>
+      <div className="content-divider full-width" />
 
-      <AnotherApps exclude={Paths.HATCH}/>
-
+      <AnotherApps exclude={Paths.HATCH} />
     </section>
   );
 }

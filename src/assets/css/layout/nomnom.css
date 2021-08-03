@@ -34,9 +34,6 @@
 .tour-mocks img:not(:first-of-type) {
   height: 568px;
 }
-.tour-mocks img.show-on-mobile {
-  display: none;
-}
 
 .three-img-container {
   display: flex;
@@ -53,11 +50,6 @@
   justify-content: space-between;
   align-items: center;
 }
-
-/* .font-selection-container {
-  margin-top: -24px;
-  margin-bottom: -56px;
-} */
 
 .font-selection-section {
   display: grid;

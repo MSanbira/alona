@@ -10,3 +10,7 @@ export function getRootPath() {
 export function isCurrent(subPath) {
     return window.location.pathname.includes(subPath);
 }
+
+export function isTablet() {
+    return window.innerWidth <= 1215;
+}

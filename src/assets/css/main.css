@@ -22,6 +22,9 @@ li:not(:last-child) {
 .hide {
   display: none !important;
 }
+.show-on-mobile.show-on-mobile.show-on-mobile {
+  display: none;
+}
 
 .contained-img {
   max-width: 100%;
@@ -80,7 +83,8 @@ h4,
 h5,
 h6,
 p,
-a {
+a,
+li {
   color: var(--text-color);
   font-size: 18px;
   font-weight: var(--weight-normal);
@@ -98,6 +102,7 @@ h2 {
 
 h3 {
   font-weight: var(--weight-bold);
+  text-transform: uppercase;
 }
 
 h5 {
@@ -218,7 +223,7 @@ h5 {
   width: 504px;
 }
 .text-container-4 {
-  width: 640px;
+  width: 650px;
 }
 
 .divider {

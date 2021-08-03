@@ -68,7 +68,9 @@
 
 .does-it-all-container {
   padding: 56px;
-  border: 1px dashed #e0b598;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .does-it-all-container h2 {
   font-family: "Comfortaa";
@@ -102,6 +104,7 @@
   color: #3d4429;
   margin-bottom: 10px;
   text-align: center;
+  text-transform: unset;
 }
 .feature-item p {
   font-family: "Open Sans";
@@ -134,9 +137,11 @@
   flex-direction: column;
   align-items: center;
 }
-.iconography-item img {
-  flex-grow: 1;
-  margin-bottom: 20px;
+.iconography-item > div {
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .iconography-item h3 {
   font-family: "Open Sans";
@@ -144,6 +149,7 @@
   font-weight: 300;
   text-align: center;
   color: #050505;
+  text-transform: unset;
 }
 
 .two-img-baby-container {
