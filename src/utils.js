@@ -14,3 +14,12 @@ export function isCurrent(subPath) {
 export function isTablet() {
     return window.innerWidth <= 1215;
 }
+
+export function setHideMobileAlert() {
+    return window.localStorage.setItem('hideMobileAlert', 'true');
+}
+
+export function isHideMobileAlert() {
+    return window.localStorage.getItem('hideMobileAlert') === 'true';
+}
+

@@ -55,28 +55,28 @@ export default function MainHeader(props) {
           <div className="work-nav-links" data-menu-to-open="work">
             <a
               href={getSubPath(Paths.TRANSPARENCY)}
-              className="text-btn nav-btn"
+              className="text-btn"
               data-is-current={isCurrent(Paths.TRANSPARENCY)}
             >
               transparency by design
             </a>
             <a
               href={getSubPath(Paths.DS)}
-              className="text-btn nav-btn"
+              className="text-btn"
               data-is-current={isCurrent(Paths.DS)}
             >
               design system
             </a>
             <a
               href={getSubPath(Paths.NOMNOM)}
-              className="text-btn nav-btn"
+              className="text-btn"
               data-is-current={isCurrent(Paths.NOMNOM)}
             >
               nomnom
             </a>
             <a
               href={getSubPath(Paths.HATCH)}
-              className="text-btn nav-btn"
+              className="text-btn"
               data-is-current={isCurrent(Paths.HATCH)}
             >
               hatch baby

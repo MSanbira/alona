@@ -11,7 +11,7 @@
   width: fit-content;
   line-height: 1;
   margin: 0;
-  animation: fade-in 1.5s ease-in-out;
+  animation: fade-in 1.5s ease-in-out 800ms;
 }
 
 .cat-section {
@@ -19,7 +19,7 @@
   left: 230px;
   top: -205px;
   z-index: 10;
-  animation: fade-in-1 2s ease-in-out;
+  animation: fade-in-1 2s ease-in-out 800ms
 }
 
 .cat-img {
@@ -33,6 +33,7 @@
   left: 112px;
   font-size: 126px;
   font-weight: 800;
+  line-height: 1.5;
 }
 
 .cat-shoe-img {
@@ -52,15 +53,16 @@
   position: relative;
   width: fit-content;
   margin: 0 auto 274px auto;
-  animation: fade-in 1.5s ease-in-out;
+  animation: fade-in 1.5s ease-in-out 800ms;
   max-width: 460px;
 }
 .main-desc a {
   text-decoration: underline;
+  font-size: 18px;
 }
 
 .conffetti-img {
-  animation: fade-in-2 2.5s ease-in-out;
+  animation: fade-in-2 2.5s ease-in-out 800ms;
   position: absolute;
   top: -70px;
   left: -380px;
@@ -71,7 +73,7 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  animation: fade-in 1.5s ease-in-out;
+  animation: fade-in 1.5s ease-in-out 800ms;
   margin-bottom: 90px;
 }
 .select-work-container .arrow-img {
@@ -98,14 +100,14 @@
   position: absolute;
   top: 0;
   right: -80px;
-  animation: fade-in-2 2.5s ease-in-out;
+  animation: fade-in-2 2.5s ease-in-out 800ms;
 }
 
 .confetti-sm2-img {
   position: absolute;
   bottom: 0;
   left: -50px;
-  animation: fade-in-2 2.5s ease-in-out;
+  animation: fade-in-2 2.5s ease-in-out 800ms;
 }
 
 @keyframes fade-in {

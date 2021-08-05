@@ -4,7 +4,7 @@ header {
   padding: 24px;
   position: fixed;
   top: 0;
-  z-index: 100;
+  z-index: 10000;
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
@@ -234,14 +234,17 @@ footer .socials {
   gap: 24px;
   margin: 0 auto 32px auto;
 }
-.another-app-btn-section .btn-container .btn {
+.another-app-btn-section .btn {
   justify-content: flex-start;
-  min-width: 320px;
+  width: fit-content;
   padding: 16px;
+  font-weight: var(--weight-bold);
 }
-.another-app-btn-section .btn-container .btn::after {
+.another-app-btn-section .btn::after {
   display: block;
   opacity: 1;
+  border-left: none;
+  margin: 0;
 }
 
 .c2c-img {
@@ -307,4 +310,34 @@ footer .socials {
 }
 .offset-imgs-container > *:last-child {
   align-self: flex-end;
+}
+
+.mobile-alert {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  gap: 24px;
+  z-index: 8000;
+  background: var(--secondary-color);
+  padding: 24px;
+}
+.mobile-alert p {
+  max-width: 75%;
+  color: white;
+}
+.mobile-alert .btn {
+  align-self: flex-end;
+  background: var(--secondary-color);
+  border-color: white;
+  color: white;
+  box-shadow: 2px 2px white;
+}
+.mobile-alert-exit {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  cursor: pointer;
 }

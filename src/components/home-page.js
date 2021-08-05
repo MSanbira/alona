@@ -36,13 +36,13 @@ export default function HomePage(props) {
         </div>
 
         <p className="color-primary main-desc">
-          I'm a product designer with 3+ years’ experience in leading product UX
+          I'm a product designer with 5 years’ experience in leading product UX
           for a variety of digital products, currently employed @ Pendo for
           Mobile.
           <br />
           I’m also a huge cat lady.
           <br />
-          <a href={getSubPath(Paths.ABOUT)} className="color-primary">
+          <a href={getSubPath(Paths.ABOUT)} className="text-btn">
             Read more about me.
           </a>
           <img

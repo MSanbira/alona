@@ -34,7 +34,7 @@ const getAppLink = (app) => {
           key={Paths.TRANSPARENCY}
           path={Paths.TRANSPARENCY}
           title="transparency"
-          subText="pendo mobile"
+          subText="// pendo mobile"
         />
       );
     case Paths.DS:
@@ -43,7 +43,7 @@ const getAppLink = (app) => {
           key={Paths.DS}
           path={Paths.DS}
           title="design system"
-          subText="pendo"
+          subText="// pendo"
         />
       );
     case Paths.HATCH:
@@ -52,7 +52,7 @@ const getAppLink = (app) => {
           key={Paths.HATCH}
           path={Paths.HATCH}
           title="hatch baby"
-          subText="ecommerce ui"
+          subText="// ecommerce ui"
         />
       );
     case Paths.NOMNOM:
@@ -61,7 +61,7 @@ const getAppLink = (app) => {
           key={Paths.NOMNOM}
           path={Paths.NOMNOM}
           title="nomnom"
-          subText="a place for foodies"
+          subText="// a place for foodies"
         />
       );
     default:

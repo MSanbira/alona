@@ -120,7 +120,7 @@ export default function DSPage(props) {
           <ImgWithDesc
             imgClass="contained-img shadowed"
             src={value2users3Src}
-            description="An exert from a workshop I led on documentation during our design sprint."
+            description="An excerpt from a workshop I led on documentation during our design sprint."
           />
 
           <div>

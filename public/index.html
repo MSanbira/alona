@@ -14,14 +14,19 @@
   <title>Alona Sanbira 🎨</title>
 
   <style>
+    body {
+      margin-top: 83px;
+    }
     .app-loader {
+      background: white;
       position: fixed;
-      z-index: 10000;
+      z-index: 9001;
       width: 100vw;
       height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: 300ms;
     }
   </style>
 </head>
@@ -64,6 +69,10 @@
         stroke="#4800BD" stroke-linecap="round" style="animation:eye-move infinite 1s alternate linear" />
     </svg>
   </div>
+
+  <script>
+    window.LoaderStart = new Date().getTime();
+  </script>
 
   <div id="root"></div>
 
