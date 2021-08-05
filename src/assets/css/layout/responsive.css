@@ -364,15 +364,12 @@
   }
 
   .about-text-and-btns {
-    padding: 32px 52px;
+    padding: 24px;
     width: calc(100% - 56px);
     margin: 0 28px;
   }
-  .about-text-and-btns p {
-    font-size: 14px;
-  }
-  .about-text-and-btns p:last-of-type {
-    margin-bottom: 40px;
+  .about-text-and-btns > p {
+    margin: 0 0 24px 0;  
   }
   .about-text-and-btns .btn-container {
     justify-content: flex-start;
