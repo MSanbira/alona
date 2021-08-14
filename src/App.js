@@ -10,7 +10,6 @@ function App() {
   useEffect(() => {
     const timeDiff = new Date().getTime() - window.LoaderStart;
     const appLoader = document.querySelector('.app-loader');
-    console.log('<<>>', window.LoaderStart, timeDiff);
     setTimeout(() => {
       appLoader.classList.add('is-transparent');
       setTimeout(() => appLoader.classList.add('hide'), 300)
