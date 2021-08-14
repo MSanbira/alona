@@ -69,7 +69,7 @@ export default function HomePage(props) {
               design system for alignment
             </a>
             <a
-              href="https://www.figma.com/proto/8SsipaR4c99c6tr36rAvG1/Portfolio-aug-21?page-id=42%3A18766&node-id=44%3A18767&viewport=382%2C48%2C0.07&scaling=min-zoom&starting-point-node-id=44%3A18767"
+              href="https://www.figma.com/proto/SBVzmrji8i0pvAjvifBLlY/Bits-of-gold-project-page?page-id=0%3A1&node-id=1%3A252&viewport=382%2C48%2C0.07&scaling=min-zoom&starting-point-node-id=1%3A252"
               className="btn btn-big"
               data-sub-text="bits of gold"
               target="_blank"
