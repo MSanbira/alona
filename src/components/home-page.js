@@ -24,15 +24,16 @@ export default function HomePage(props) {
         </div>
 
         <p className="color-primary main-desc">
+          
           I'm a product designer with 5 years’ experience in leading product UX
-          for a variety of digital products, currently employed @ Pendo for
-          Mobile.
+          for a variety of digital products, currently employed @ Booking.com, mobile apps.
           <br />
           I’m also a huge cat lady.
           <br />
           <a href={getSubPath(Paths.ABOUT)} className="text-btn">
             Read more about me.
           </a>
+          
           <img
             src={conffetiSrc}
             className="conffetti-img hide-on-mobile"
