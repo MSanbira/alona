@@ -1,5 +1,4 @@
 import React from "react";
-import Parallax from "react-rellax";
 import imageAboutSrc from "../assets/images/image_about.png";
 import mailSrc from "../assets/images/mail.svg";
 import appSrc from "../assets/images/about/app-exp.png";
@@ -18,22 +17,19 @@ const createMag2 =
 export default function AboutPage(props) {
   return (
     <section id="aboutPage">
-      <Parallax
-        as="img"
-        className="about-img"
-        src={imageAboutSrc}
-        alt="alona and hemda"
-      />
+      <div className="about-img-container">
+        <img src={imageAboutSrc} alt="About" className="about-img-inner" />
+      </div>
       <div className="about-text-and-btns">
         <p>
           Hi, I'm Alona, a product designer with background in{" "}
           <span className="highlight">education and psychology,</span> with five
-          years’ experience in designing product UX, both as a lead and as part
+          years' experience in designing product UX, both as a lead and as part
           of a team of designers.
         </p>
         <p>
           I am fully proficient in design tools and implementing processes of
-          market and user research, ideation and rapid prototyping. I’m a firm
+          market and user research, ideation and rapid prototyping. I'm a firm
           believer in teamwork, I feel it brings the best out of us, and helps
           us grow as professionals. I Majored in learning technologies and I
           taught myself how to use nearly every design tool known to man.{" "}
@@ -53,7 +49,7 @@ export default function AboutPage(props) {
         <div className="content-divider" />
 
         <div className="extracurricular-container">
-          <h3>Some extracurricular stuff I’ve been working on recently...</h3>
+          <h3>Some extracurricular stuff I've been working on recently...</h3>
           <ExtracurricularSection
             imgSrc={appSrc}
             title="Designing for a Cause"
@@ -84,7 +80,7 @@ export default function AboutPage(props) {
               catch emojis and ware off the daily grind. Feedback has been incredible!`}
             links={[
               {
-                text: "We’re live in the extension marketplace!",
+                text: "We're live in the extension marketplace!",
                 href: "https://chrome.google.com/webstore/detail/emoji-catcher/jbbmffejmaheleofjaefpfcojebpflhf",
               },
             ]}
@@ -123,13 +119,13 @@ export default function AboutPage(props) {
             imgSrc={pixelSrc}
             title="The Pixelated Podcast"
             bodyText={`My husband and I have start a design-engineering
-              podcast in Hebrew, called ‘Pixelated’, where we dicuss anything
+              podcast in Hebrew, called 'Pixelated', where we dicuss anything
               and everything code and design related in the world of digital
-              products. We’re still just starting out, but will be very happy
+              products. We're still just starting out, but will be very happy
               for any feedback and suggestions!`}
             links={[
               {
-                text: "We’re on Spotify!",
+                text: "We're on Spotify!",
                 href: "https://open.spotify.com/show/4y2H3ULRIo4S6gMHh2COE1?si=D8p-4k-VT2GtdOy2372f3w&nd=1",
               },
             ]}
