@@ -7,29 +7,24 @@ export default function MobileCarousel(props) {
   let selectedIndexNum = 0;
 
   useEffect(() => {
-    if (mobileCarouselRef.current) {
-      mobileCarouselRef.current.addEventListener(
-        "scroll",
-        handleOnScrollChange
-      );
+    const handleOnScrollChange = (e) => {
+      const scrollPosition = Math.round(e.target.scrollLeft / window.innerWidth);
+      if (selectedIndexNum !== scrollPosition) {
+        setSelectedIndex(scrollPosition);
+        selectedIndexNum = scrollPosition;
+      }
+    };
+
+    const carousel = mobileCarouselRef.current;
+    if (carousel) {
+      carousel.addEventListener("scroll", handleOnScrollChange);
     }
     return () => {
-      if (mobileCarouselRef.current) {
-        mobileCarouselRef.current.removeEventListener(
-          "scroll",
-          handleOnScrollChange
-        );
+      if (carousel) {
+        carousel.removeEventListener("scroll", handleOnScrollChange);
       }
     };
   }, []);
-
-  const handleOnScrollChange = (e) => {
-    const scrollPosition = Math.round(e.target.scrollLeft / window.innerWidth);
-    if (selectedIndexNum !== scrollPosition) {
-      setSelectedIndex(scrollPosition);
-      selectedIndexNum = scrollPosition;
-    }
-  };
 
   return (
     <div className="mobile-carousel" ref={mobileCarouselRef}>
