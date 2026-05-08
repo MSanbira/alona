@@ -4,14 +4,14 @@ export default function MobileCarousel(props) {
   const { items = [] } = props;
   const mobileCarouselRef = React.useRef(null);
   const [selectedIndex, setSelectedIndex] = useState(0);
-  let selectedIndexNum = 0;
+  const selectedIndexNum = React.useRef(0);
 
   useEffect(() => {
     const handleOnScrollChange = (e) => {
       const scrollPosition = Math.round(e.target.scrollLeft / window.innerWidth);
-      if (selectedIndexNum !== scrollPosition) {
+      if (selectedIndexNum.current !== scrollPosition) {
         setSelectedIndex(scrollPosition);
-        selectedIndexNum = scrollPosition;
+        selectedIndexNum.current = scrollPosition;
       }
     };
 
